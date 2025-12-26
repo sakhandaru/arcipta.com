@@ -14,14 +14,14 @@ export default function Home() {
     <main className="relative min-h-screen w-full flex flex-col">
       <Header />
       <Hero />
-      <Problem />
+      {/* <Problem />
       <Positioning />
       <GrowthCompass />
       <Services />
       <Gallery />
       <HowWeWork />
       <CTA />
-      <Footer />
+      <Footer /> */}
     </main>
   );
 }
