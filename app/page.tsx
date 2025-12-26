@@ -20,8 +20,8 @@ export default function Home() {
       <Services />
       <Gallery />
       <HowWeWork />
-      <CTA />
-      <Footer /> */}
+      <CTA /> */}
+      <Footer />
     </main>
   );
 }
