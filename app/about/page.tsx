@@ -37,9 +37,9 @@ export default function AboutPage() {
               masalah yang tidak ada.
             </p>
             <p>
-              Arcipta berdiri sebagai antitesis dari "asal canggih". Kami
-              memulai setiap project dengan pertanyaan sulit: "Kenapa?" dan "Mau
-              ke mana?".
+              Arcipta berdiri sebagai antitesis dari &quot;asal canggih&quot;.
+              Kami memulai setiap project dengan pertanyaan sulit:
+              &quot;Kenapa?&quot; dan &quot;Mau ke mana?&quot;.
             </p>
             <p>
               Kami tidak hanya menulis kode; kami merancang masa depan digital

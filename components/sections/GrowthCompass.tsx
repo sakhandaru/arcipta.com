@@ -23,9 +23,14 @@ export default function GrowthCompass() {
   return (
     <section className="py-32 px-6 bg-white dark:bg-black">
       <div className="max-w-[1440px] mx-auto">
-        <h2 className="text-4xl md:text-6xl font-creato font-bold mb-20 text-center">
-          Growth Compass
-        </h2>
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-6xl font-creato font-bold mb-6">
+            Growth Compass <span className="font-bold text-[#FF6B00]">ARCIPTA</span>
+          </h2>
+          <p className="max-w-6xl mx-auto text-lg md:text-xl text-neutral-600 dark:text-neutral-400 font-azeret">
+            Navigasi strategis untuk membantu Anda menentukan arah langkah yang tepat, dirancang khusus berdasarkan setiap tahapan perkembangan perusahaan.
+          </p>
+        </div>
 
         <div className="flex flex-col gap-4">
           {phases.map((phase) => (

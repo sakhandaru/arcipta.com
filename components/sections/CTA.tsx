@@ -1,13 +1,14 @@
 export default function CTA() {
   return (
     <section className="py-32 px-6 bg-neutral-100 dark:bg-neutral-900 flex flex-col items-center text-center">
-      <div className="max-w-4xl mx-auto flex flex-col gap-10">
-        <h2 className="text-4xl md:text-7xl font-creato font-black leading-tight">
+      <div className="max-w-6xl mx-auto flex flex-col gap-10">
+        <h2 className="text-4xl md:text-7xl font-creato font-semibold leading-tight">
           Masih bingung menentukan kebutuhan digital bisnis Anda?
         </h2>
 
         <p className="font-azeret text-lg text-neutral-600 dark:text-neutral-400">
-          Jangan habiskan budget untuk tools yang salah. Mari bicara direction.
+          Jangan habiskan budget untuk tools yang salah. Mari bicara{" "}
+          <span className="font-bold text-[#FF6B00]">direction</span>.
         </p>
 
         <div className="flex flex-col md:flex-row gap-4 justify-center mt-8">
