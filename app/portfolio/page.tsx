@@ -1,13 +1,10 @@
 import Link from "next/link";
-import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { portfolioItems } from "@/data/portfolio";
 
 export default function PortfolioPage() {
   return (
     <main className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
-      <Header />
-
       <div className="pt-32 pb-20 px-6 max-w-[1440px] mx-auto">
         <h1 className="text-6xl md:text-9xl font-creato font-black mb-20 tracking-tighter">
           Selected <br /> Works

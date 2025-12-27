@@ -1,4 +1,3 @@
-import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import Problem from "@/components/sections/Problem";
@@ -12,7 +11,6 @@ import CTA from "@/components/sections/CTA";
 export default function Home() {
   return (
     <main className="relative min-h-screen w-full flex flex-col">
-      <Header />
       <Hero />
       <Problem />
       <Positioning />

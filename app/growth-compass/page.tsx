@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export default function GrowthCompassPage() {
@@ -26,8 +25,6 @@ export default function GrowthCompassPage() {
 
   return (
     <main className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
-      <Header />
-
       <div className="pt-32 pb-20 px-6 max-w-[1440px] mx-auto">
         <h1 className="text-5xl md:text-8xl font-creato font-black mb-10 text-center">
           Growth Compass API

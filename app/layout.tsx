@@ -3,6 +3,8 @@ import { creatoDisplay, azeretMono } from "./fonts";
 import "./globals.css";
 import GSAPRegistry from "@/lib/gsap/GSAPRegistry";
 import SmoothScroll from "@/components/core/SmoothScroll";
+import Sidebar from "@/components/layout/Sidebar";
+import Header from "@/components/layout/Header";
 
 export const metadata: Metadata = {
   title: "Arcipta - Direction before Technology",
@@ -20,6 +22,8 @@ export default function RootLayout({
         className={`${creatoDisplay.variable} ${azeretMono.variable} antialiased`}
       >
         <GSAPRegistry>
+          {/* <Header /> */}
+          <Sidebar />
           <SmoothScroll>{children}</SmoothScroll>
         </GSAPRegistry>
       </body>

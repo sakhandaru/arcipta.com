@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation";
-import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { portfolioItems } from "@/data/portfolio";
 
@@ -24,8 +23,6 @@ export default async function PortfolioDetailPage({
 
   return (
     <main className="min-h-screen bg-neutral-50 dark:bg-black text-black dark:text-white">
-      <Header />
-
       <article className="pt-40 pb-20 px-6 max-w-[1440px] mx-auto">
         {/* Header */}
         <div className="mb-20 border-b border-black/10 dark:border-white/10 pb-10">

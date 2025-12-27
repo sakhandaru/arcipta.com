@@ -1,11 +1,8 @@
-import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export default function LaunchpadPage() {
   return (
     <main className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
-      <Header />
-
       <div className="pt-40 pb-20 px-6 max-w-[1440px] mx-auto">
         <div className="mb-20">
           <span className="text-blue-500 font-azeret text-sm uppercase tracking-widest border border-blue-500 px-3 py-1 rounded-full">
