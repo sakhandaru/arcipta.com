@@ -41,3 +41,9 @@ h5,
 h6 {
   font-family: var(--font-creato), sans-serif;
 }
+
+/* LOCK INITIAL STATE */
+[data-animate="how"] > * {
+  opacity: 0;
+  transform: translateY(40px);
+}
