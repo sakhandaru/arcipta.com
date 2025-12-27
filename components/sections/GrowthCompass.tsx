@@ -44,8 +44,7 @@ export default function GrowthCompass() {
           const container = containerRef.current;
           if (!container) return;
 
-          const totalScroll =
-            container.scrollWidth - window.innerWidth;
+          const totalScroll = container.scrollWidth - window.innerWidth;
 
           const pinTween = gsap.to(container, {
             x: () => -totalScroll,
@@ -63,12 +62,10 @@ export default function GrowthCompass() {
           });
 
           // Text reveal per card (sinkron horizontal)
-          const cards =
-            gsap.utils.toArray<HTMLElement>(".compass-card");
+          const cards = gsap.utils.toArray<HTMLElement>(".compass-card");
 
           cards.forEach((card) => {
-            const text =
-              card.querySelector<HTMLElement>(".reveal-text");
+            const text = card.querySelector<HTMLElement>(".reveal-text");
             if (!text) return;
 
             gsap.fromTo(
@@ -106,16 +103,14 @@ export default function GrowthCompass() {
 
   return (
     <section ref={triggerRef} className="bg-black overflow-hidden">
-      <div
-        ref={containerRef}
-        className="flex w-[300vw] h-screen items-center"
-      >
+      <div ref={containerRef} className="flex w-[400vw] h-screen items-center">
         <section className="w-screen h-screen flex flex-col justify-center px-10 md:px-24 shrink-0">
           <h2 className="text-4xl md:text-7xl font-creato font-bold text-white mb-6">
             Growth Compass <span className="text-[#FF6B00]">ARCIPTA</span>
           </h2>
           <p className="font-azeret text-neutral-500 max-w-2xl text-lg">
-            Scroll untuk melihat bagaimana kami memandu pertumbuhan bisnis Anda secara strategis.
+            Scroll untuk melihat bagaimana kami memandu pertumbuhan bisnis Anda
+            secara strategis.
           </p>
           <div className="mt-12 flex items-center gap-4 text-white/30 font-azeret text-xs uppercase tracking-widest">
             <span>Scroll Down to Navigate</span>
@@ -125,7 +120,7 @@ export default function GrowthCompass() {
         {phases.map((phase) => (
           <div
             key={phase.id}
-            className="compass-card w-screen h-screen flex flex-col justify-center px-6 md:px-24 relative"
+            className="compass-card w-screen h-screen flex flex-col justify-center px-6 md:px-24 relative shrink-0"
           >
             {/* Background Number */}
             <span className="absolute left-6 md:left-24 top-1/2 -translate-y-1/2 text-[30vw] md:text-[40vw] font-creato font-black text-white/[0.03] select-none pointer-events-none">
@@ -170,5 +165,3 @@ export default function GrowthCompass() {
     </section>
   );
 }
-
-
