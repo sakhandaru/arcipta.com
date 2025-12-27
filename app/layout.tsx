@@ -25,6 +25,7 @@ export default function RootLayout({
           {/* <Header /> */}
           <Sidebar />
           <SmoothScroll>{children}</SmoothScroll>
+          {/* {children} */}
         </GSAPRegistry>
       </body>
     </html>
