@@ -50,7 +50,7 @@ export default function Positioning() {
   return (
     <section
       ref={containerRef}
-      className="py-32 px-6 bg-neutral-50 dark:bg-neutral-950"
+      className="relative z-0 py-32 px-6 bg-neutral-50 dark:bg-neutral-950"
     >
       <div className="max-w-[1440px] mx-auto flex flex-col items-center text-center gap-12">
         {/* Visual Identity Logo/Mark */}

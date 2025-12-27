@@ -51,7 +51,7 @@ export default function GrowthCompass() {
             ease: "none",
             scrollTrigger: {
               trigger: triggerRef.current,
-              start: "top top",
+              start: "top+=1 top",
               end: () => `+=${totalScroll}`,
               scrub: 1,
               pin: true,
@@ -91,9 +91,9 @@ export default function GrowthCompass() {
         // ===============================
         // MOBILE & TABLET
         // ===============================
-        "(max-width: 1023px)": () => {
+        "(min-width: 1023px)": () => {
           // FULL DISABLE
-          ScrollTrigger.getAll().forEach((st) => st.kill());
+          
           gsap.set(containerRef.current, { clearProps: "all" });
         },
       });
@@ -102,9 +102,12 @@ export default function GrowthCompass() {
   );
 
   return (
-    <section ref={triggerRef} className="bg-black overflow-hidden">
-      <div ref={containerRef} className="flex w-[400vw] h-screen items-center">
-        <section className="w-screen h-screen flex flex-col justify-center px-10 md:px-24 shrink-0">
+    <section ref={triggerRef} className="bg-black relative z-10">
+      <div
+        ref={containerRef}
+        className="flex flex-col w-full h-auto md:flex-row md:w-[400vw] md:h-screen items-center"
+      >
+        <section className="w-full py-24 md:w-screen md:h-screen flex flex-col justify-center px-10 md:px-24 shrink-0">
           <h2 className="text-4xl md:text-7xl font-creato font-bold text-white mb-6">
             Growth Compass <span className="text-[#FF6B00]">ARCIPTA</span>
           </h2>
@@ -120,7 +123,7 @@ export default function GrowthCompass() {
         {phases.map((phase) => (
           <div
             key={phase.id}
-            className="compass-card w-screen h-screen flex flex-col justify-center px-6 md:px-24 relative shrink-0"
+            className="compass-card w-full py-24 md:w-screen md:h-screen flex flex-col justify-center px-6 md:px-24 relative shrink-0"
           >
             {/* Background Number */}
             <span className="absolute left-6 md:left-24 top-1/2 -translate-y-1/2 text-[30vw] md:text-[40vw] font-creato font-black text-white/[0.03] select-none pointer-events-none">

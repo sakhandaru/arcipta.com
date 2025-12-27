@@ -13,6 +13,11 @@ export default function SmoothScroll({
   children: React.ReactNode;
 }) {
   useEffect(() => {
+    // Disable Lenis on Mobile / Tablet (Native scroll is better for touch)
+    if (window.matchMedia("(max-width: 1023px)").matches) {
+      return;
+    }
+
     // Initialize Lenis
     const lenisInstance = new Lenis({
       duration: 1.5,
@@ -35,8 +40,18 @@ export default function SmoothScroll({
     // Disable GSAP lag smoothing to ensure sync with Lenis
     gsap.ticker.lagSmoothing(0);
 
+    // Explicitly refresh ScrollTrigger to prevent pin collisions
+    ScrollTrigger.refresh();
+
+    // Force refresh on resize
+    const handleResize = () => {
+      ScrollTrigger.refresh();
+    };
+    window.addEventListener("resize", handleResize);
+
     return () => {
       // Cleanup
+      window.removeEventListener("resize", handleResize);
       gsap.ticker.remove((time) => {
         lenisInstance.raf(time * 1000);
       });

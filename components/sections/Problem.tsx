@@ -54,7 +54,7 @@ export default function Problem() {
   return (
     <section
       ref={containerRef}
-      className="py-32 px-6 bg-white dark:bg-black text-black dark:text-white overflow-hidden"
+      className="relative z-0 py-32 px-6 bg-white dark:bg-black text-black dark:text-white overflow-hidden"
     >
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left: Image/Visual Placeholder */}

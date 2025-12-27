@@ -1,4 +1,3 @@
-
 "use client";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
@@ -89,7 +88,7 @@ export default function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-screen w-full flex flex-col justify-center px-6 pt-32 pb-20 overflow-hidden bg-[var(--background)]"
+      className="relative min-h-[100svh] md:min-h-screen w-full flex flex-col justify-center px-6 pt-32 pb-20 overflow-hidden bg-[var(--background)]"
     >
       {/* Background Gradient (Placeholder for complex animation later) */}
       <div
