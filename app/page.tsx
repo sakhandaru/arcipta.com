@@ -12,7 +12,7 @@ import GradualBlur from "@/components/GradualBlur";
 export default function Home() {
   return (
     <main className="relative min-h-screen w-full flex flex-col">
-      {/* <GradualBlur 
+      <GradualBlur 
         preset="page-footer" 
         height="200px" 
         strength={1.5} 
@@ -21,7 +21,7 @@ export default function Home() {
         exponential={true}
         opacity={1}
         
-      /> */}
+      />
       <Hero />
       <Problem />
       <Positioning />
