@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ANIMATION_CONFIG, SCROLL_TRIGGER_CONFIG } from "@/lib/animations";
+import ImageComparison from "../ui/feature-with-image-comparison";
 
 export default function Problem() {
   const containerRef = useRef<HTMLElement>(null);
@@ -58,14 +59,8 @@ export default function Problem() {
     >
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left: Image/Visual Placeholder */}
-        <div
-          ref={visualRef}
-          className="relative aspect-square md:aspect-[4/3] bg-neutral-100 dark:bg-neutral-900 rounded-2xl overflow-hidden flex items-center justify-center will-change-transform"
-        >
-          <p className="font-azeret text-xs text-neutral-400 uppercase tracking-widest">
-            Visual: Direction vs Technology
-          </p>
-        </div>
+        
+        <ImageComparison />
 
         {/* Right: Copy */}
         <div ref={textRef} className="flex flex-col gap-8">

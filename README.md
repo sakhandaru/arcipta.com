@@ -38,9 +38,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 # UI Component Recommendation
 1. Gradual Blur - reactbits
 2. Fluid Glass
-3. Staggered Menu
 4. Terminal - Magic Ui
 5. Hyper Text (text huruf random ke jadi)
 6. Fey.com Macbook Scroll - Acernity
 7. Compare
 8. customer section - tailark
+
+
+# yang kemungkinan bikin berat
+1. gradual blur
+2. <img src="" /> kalau masih berat ganti <Image />
