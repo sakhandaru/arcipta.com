@@ -37,7 +37,7 @@ export default function Footer() {
       }
     });
 
-    // Reveal Arcipta.com logo
+
     tl.from(logoRef.current, {
       y: 80,
       opacity: 0,
@@ -45,7 +45,6 @@ export default function Footer() {
       ease: "power4.out",
     });
 
-    // Staggered reveal untuk semua kolom & link
     tl.from(".footer-column", {
       y: 30,
       opacity: 0,
@@ -64,7 +63,6 @@ export default function Footer() {
       <div className="max-w-[1440px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-20">
           
-          {/* Column 1: Brand (Spans 5 cols) */}
           <div className="md:col-span-5">
             <div className="overflow-hidden">
               <h2 
@@ -79,7 +77,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Column 2: Navigation (Spans 2 cols) */}
           <div className="md:col-span-2 footer-column">
             <h3 className="text-xs font-azeret text-neutral-600 uppercase tracking-[0.2em] mb-6">
               Navigation
@@ -95,7 +92,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Socials (Spans 2 cols) */}
           <div className="md:col-span-2 footer-column">
             <h3 className="text-xs font-azeret text-neutral-600 uppercase tracking-[0.2em] mb-6">
               Socials
@@ -112,7 +108,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 4: Contact (Spans 3 cols) */}
           <div className="md:col-span-3 footer-column">
             <h3 className="text-xs font-azeret text-neutral-600 uppercase tracking-[0.2em] mb-6">
               Contact
@@ -132,10 +127,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-
         </div>
-
-        {/* Bottom Bar */}
         <div className="pt-12 border-t border-white/5 flex flex-col md:row justify-between items-center gap-4">
           <p className="font-azeret text-[10px] text-neutral-700 uppercase tracking-[0.3em]">
             © 2025 Arcipta Digital Agency. All rights reserved.

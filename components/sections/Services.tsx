@@ -21,7 +21,6 @@ export default function Services() {
 
   useGSAP(
     () => {
-      // Stagger Grid Reveal
       const items = gridRef.current?.children;
       if (items) {
         gsap.from(items, {

@@ -107,9 +107,7 @@ export default function Sidebar() {
           Arcipta.com
         </Link>
 
-        {/* RIGHT SIDE CONTROLS */}
         <div className="flex flex-col gap-10 items-center pointer-events-auto w-10">
-          {/* HAMBURGER - Always visible now */}
           <button
             ref={menuButtonRef}
             onMouseEnter={openSidebar}
@@ -126,7 +124,6 @@ export default function Sidebar() {
             <br />
           </button>
 
-          {/* SCROLL TO TOP */}
           <button
             onClick={scrollToTop}
             className="group flex flex-col items-center gap-4 opacity-50 hover:opacity-100 transition-opacity duration-300"
@@ -141,13 +138,11 @@ export default function Sidebar() {
         </div>
       </div>
 
-      {/* BACKDROP (Click to close) */}
       <div
         ref={backdropRef}
         onClick={() => setIsOpen(false)}
         className="fixed inset-0 bg-black/60 z-[60] opacity-0 pointer-events-none transition-opacity cursor-pointer flex items-center justify-center md:justify-start md:pl-20"
       >
-        {/* Hint Text on Backdrop */}
         <span className="hidden md:block font-azeret text-xs text-white/50 uppercase tracking-widest pointer-events-none">
           {/* Arcipta — Solusi Digital untuk Kebutuhan Sistem & Aplikasi Anda. 
           <br /> Transformasi bisnis melalui inovasi teknologi dan strategi digital yang tepat sasaran. 
@@ -157,14 +152,13 @@ export default function Sidebar() {
           <br /> <span className="">digunakan saat konsultasi</span>
         </span>
 
-        {/* SIDEBAR PANEL */}
         <div
           ref={sidebarRef}
           onClick={(e) => e.stopPropagation()} // Stop click propagation to backdrop
           className="fixed top-0 right-0 h-screen w-full md:w-[360px] bg-neutral-900 border-l border-white/10 flex flex-col justify-between p-12 shadow-2xl translate-x-full cursor-default overflow-y-auto"
         >
           <div className="flex flex-col gap-12 mt-20 md:mt-0">
-            {/* Navigation */}
+         
             <nav ref={linksRef} className="flex flex-col gap-6">
               {[
                 { name: "Beranda", href: "/" },
@@ -172,7 +166,7 @@ export default function Sidebar() {
                 { name: "Services", href: "/#services" },
                 { name: "Growth Compass", href: "/growth-compass" },
                 { name: "Portfolio", href: "/portfolio" },
-                { name: "Contact", href: "/#contact" },
+                { name: "Contact", href: "/contact" },
               ].map((link, i) => (
                 <Link
                   key={i}
@@ -185,7 +179,6 @@ export default function Sidebar() {
               ))}
             </nav>
 
-            {/* Footer Copy Info */}
             <div className="flex flex-col gap-8 pt-8 border-t border-white/10">
               <div className="grid grid-cols-2 gap-8">
                 <div>

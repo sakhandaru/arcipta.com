@@ -24,7 +24,7 @@ export default async function PortfolioDetailPage({
   return (
     <main className="min-h-screen bg-neutral-50 dark:bg-black text-black dark:text-white">
       <article className="pt-40 pb-20 px-6 max-w-[1440px] mx-auto">
-        {/* Header */}
+ 
         <div className="mb-20 border-b border-black/10 dark:border-white/10 pb-10">
           <div className="flex justify-between items-end mb-6">
             <span className="font-azeret text-sm uppercase tracking-widest text-neutral-500">
@@ -39,9 +39,7 @@ export default async function PortfolioDetailPage({
           </h1>
         </div>
 
-        {/* Content Layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-y-32">
-          {/* Quick Overview Sidebar */}
           <div className="md:col-span-3 md:sticky md:top-32 h-fit">
             <div className="flex flex-col gap-8">
               <div>
@@ -50,7 +48,7 @@ export default async function PortfolioDetailPage({
                 </h3>
                 <p className="font-creato text-lg">{project.overview.role}</p>
               </div>
-              <div className="w-full h-[1px] bg-black/10 dark:bg-white/10"></div>
+              <div className="w-full h-px bg-black/10 dark:bg-white/10"></div>
               <p className="font-azeret text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
                 Study case ini fokus pada strategi bisnis dan penyelesaian
                 masalah, bukan sekadar showcase visual.
@@ -58,7 +56,6 @@ export default async function PortfolioDetailPage({
             </div>
           </div>
 
-          {/* Main Story */}
           <div className="md:col-span-8 md:col-start-5 flex flex-col gap-20">
             <section>
               <h2 className="text-3xl font-creato mb-6">Context</h2>

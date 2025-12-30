@@ -18,7 +18,6 @@ export default function OperatePage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
-          {/* Left: Common Mistakes */}
           <div>
             <h2 className="text-3xl font-creato font-bold mb-8">
               Kesalahan Umum
@@ -41,7 +40,6 @@ export default function OperatePage() {
             </ul>
           </div>
 
-          {/* Right: Arcipta Approach */}
           <div>
             <h2 className="text-3xl font-creato font-bold mb-8">
               Pendekatan Arcipta
@@ -65,7 +63,6 @@ export default function OperatePage() {
           </div>
         </div>
       </div>
-
       <Footer />
     </main>
   );
