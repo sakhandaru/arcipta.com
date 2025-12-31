@@ -51,7 +51,7 @@ const ImageComparison = () => {
         style={{ clipPath: `inset(0 ${100 - inset}% 0 0)` }}
       >
         <Image
-          src="/image/mockups/kiri.png" // Ganti dengan gambar 'After'
+          src="/image/mockups/kiri4.png" // Ganti dengan gambar 'After'
           alt="After"
           fill
           className="object-cover"
@@ -62,7 +62,7 @@ const ImageComparison = () => {
       {/* Bottom Image (The background) */}
       <div className="absolute inset-0 z-10">
         <Image
-          src="/image/mockups/kanan.png" // Ganti dengan gambar 'Before'
+          src="/image/mockups/kanan4.png" // Ganti dengan gambar 'Before'
           alt="Before"
           fill
           className="object-cover"

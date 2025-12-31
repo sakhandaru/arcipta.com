@@ -4,7 +4,6 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
       <div className="pt-40 pb-20 px-6 max-w-[1440px] mx-auto">
-        {/* Intro */}
         <div className="mb-32">
           <h1 className="text-6xl md:text-9xl font-creato font-black mb-10 tracking-tighter mix-blend-difference">
             WE ARE <br /> ARCIPTA.
@@ -16,7 +15,6 @@ export default function AboutPage() {
           </p>
         </div>
 
-        {/* Philosophy */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-40">
           <div>
             <span className="font-azeret text-xs uppercase tracking-widest text-neutral-400 block mb-6">
@@ -45,7 +43,6 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Values */}
         <div className="border-t border-black/10 dark:border-white/10 pt-20">
           <h2 className="text-3xl font-creato font-bold mb-12">Our Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -75,7 +72,6 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-
       <Footer />
     </main>
   );

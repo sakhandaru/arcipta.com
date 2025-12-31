@@ -59,7 +59,7 @@ export default function Problem() {
     >
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left: Image/Visual Placeholder */}
-        
+
         <ImageComparison />
 
         {/* Right: Copy */}

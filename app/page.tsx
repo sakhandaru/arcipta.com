@@ -7,21 +7,14 @@ import Services from "@/components/sections/Services";
 import Gallery from "@/components/sections/Gallery";
 import HowWeWork from "@/components/sections/HowWeWork";
 import CTA from "@/components/sections/CTA";
-import GradualBlur from "@/components/GradualBlur";
+import FAQ from "@/components/sections/FAQ";
+import Testimonials from "@/components/sections/Testimonials";
+import GradualBlurLite from "@/components/GradualBlur";
+// import GradualBlur from "@/components/GradualBlur";
 
 export default function Home() {
   return (
     <main className="relative min-h-screen w-full flex flex-col">
-      {/* <GradualBlur 
-        preset="page-footer" 
-        height="200px" 
-        strength={1.5} 
-        zIndex={40}
-        curve="bezier"
-        exponential={true}
-        opacity={1}
-        
-      /> */}
       <Hero />
       <Problem />
       <Positioning />
@@ -29,6 +22,8 @@ export default function Home() {
       <Services />
       <Gallery />
       <HowWeWork />
+      <Testimonials />
+      <FAQ />
       <CTA />
       <Footer />
     </main>

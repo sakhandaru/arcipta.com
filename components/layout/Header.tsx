@@ -13,10 +13,8 @@ export default function Header() {
           Arcipta.com
         </Link>
 
-        {/* Mobile Menu Trigger (Placeholder) */}
         <button className="md:hidden">MENU</button>
 
-        {/* Desktop Menu (Placeholder) */}
         <nav className="hidden md:flex gap-8">
           <Link href="/about" className="hover:opacity-70 font-azeret text-sm">
             About

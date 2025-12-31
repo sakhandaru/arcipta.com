@@ -93,7 +93,7 @@ export default function GrowthCompass() {
         // ===============================
         "(min-width: 1023px)": () => {
           // FULL DISABLE
-          
+
           gsap.set(containerRef.current, { clearProps: "all" });
         },
       });
@@ -117,7 +117,7 @@ export default function GrowthCompass() {
           </p>
           <div className="mt-12 flex items-center gap-4 text-white/30 font-azeret text-xs uppercase tracking-widest">
             <span>Scroll Down to Navigate</span>
-            <div className="w-20 h-[1px] bg-white/20"></div>
+            <div className="w-20 h-px bg-white/20"></div>
           </div>
         </section>
         {phases.map((phase) => (
@@ -126,7 +126,7 @@ export default function GrowthCompass() {
             className="compass-card w-full py-24 md:w-screen md:h-screen flex flex-col justify-center px-6 md:px-24 relative shrink-0"
           >
             {/* Background Number */}
-            <span className="absolute left-6 md:left-24 top-1/2 -translate-y-1/2 text-[30vw] md:text-[40vw] font-creato font-black text-white/[0.03] select-none pointer-events-none">
+            <span className="absolute left-6 md:left-24 top-1/2 -translate-y-1/2 text-[30vw] md:text-[40vw] font-creato font-black text-white/3 select-none pointer-events-none">
               {phase.id}
             </span>
 

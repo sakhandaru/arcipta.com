@@ -5,6 +5,7 @@
    ROOT — DARK ONLY (LOCKED)
    ============================ */
 :root {
+  color-scheme: dark;
   /* Brand */
   --arcipta-gradient: linear-gradient(
     135deg,
