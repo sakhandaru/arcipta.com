@@ -1,0 +1,3 @@
+Menurutku sudah bagus mas tinggal nanti pas kan dengan foto dan assetnya, kalau bisa jangan hitam hitam atau putih lagi (bisa perbanyak warna orange nya).
+Kalau bisa asset atau fotonya warna lain (bukan hitam/putih) supaya lebih kontras. 
+Aku lihat terlalu banyak warna hitam putih jadi terlalu kurang enak kalau dilihat. contohnya tulisan ini diawal "DIRECTION BEFORE TECHNOLOGY" kelihatan terlalu terang jadi kalau malam rasanya kayak langsung kena flashbang.
