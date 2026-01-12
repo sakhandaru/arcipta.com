@@ -158,7 +158,6 @@ export default function Sidebar() {
           className="fixed top-0 right-0 h-screen w-full md:w-[360px] bg-neutral-900 border-l border-white/10 flex flex-col justify-between p-12 shadow-2xl translate-x-full cursor-default overflow-y-auto"
         >
           <div className="flex flex-col gap-12 mt-20 md:mt-0">
-         
             <nav ref={linksRef} className="flex flex-col gap-6">
               {[
                 { name: "Beranda", href: "/" },
@@ -166,13 +165,14 @@ export default function Sidebar() {
                 { name: "Services", href: "/#services" },
                 { name: "Growth Compass", href: "/growth-compass" },
                 { name: "Portfolio", href: "/portfolio" },
+                { name: "Artikel", href: "/articles" },
                 { name: "Contact", href: "/contact" },
               ].map((link, i) => (
                 <Link
                   key={i}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="font-creato text-4xl md:text-5xl text-white hover:text-orange-500 transition-colors duration-300 font-bold uppercase tracking-tight"
+                  className="font-creato text-3xl md:text-4xl text-white hover:text-orange-500 transition-colors duration-300 font-bold uppercase tracking-tight"
                 >
                   {link.name}
                 </Link>

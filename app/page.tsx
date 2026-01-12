@@ -15,6 +15,7 @@ import GradualBlurLite from "@/components/GradualBlur";
 export default function Home() {
   return (
     <main className="relative min-h-screen w-full flex flex-col">
+      <GradualBlurLite />
       <Hero />
       <Problem />
       <Positioning />
